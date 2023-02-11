@@ -1,15 +1,20 @@
 :root {
-    --primery-text-color: #2E2F42;
-    --title-text-color: #434455;
-    --accent-color: #4D5AE5;
+    --primary-brand: #4D5AE5;
+    --pressed-state: #404BBF;
+    --dark: #2E2F42;
+    --success: #31D0AA;
+    --text: #434455;
+    --subtle-text: #8E8F99;
+    --accent: #E7E9FC;
+    --light: #F4F4FD;
+    --modal-overlay: #2E2F42;
+    --hero-background: #2E2F42;
 }
 
-.page {
-
+body {
     font-family: 'Roboto', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    background: #E5E5E5;
-    color: var(--primery-text-color);
+    color: var(--text);
+    background-color: #FFFFFF;
 }
 
 .header {
@@ -17,14 +22,14 @@
 }
 
 .content {
-    background: #F4F4FD;
+    background: var(--light);
     cursor: pointer;
 }
 
 
 .box-order,
 .footer {
-    background: var(--primery-text-color);
+    background: var(--modal-overlay);
 }
 
 .slogan {
@@ -34,14 +39,6 @@
     color: #FFFFFF;
 }
 
-/* цвет осн текста  #2E2F42 */
-/* цвет описания #434455 */
-/* белый цвет #FFFFFF */
-/* цвет логотипа и кнопок  #4D5AE5 */
-/* цвет описания логотипа  #E7E9FC */
-/* вторичный цвет фона  #F4F4FD */
-/* Основной цвет фона #E5E5E5 */
-/* цвет футера #2E2F42 */
 
 .button {
     font-weight: 500;
@@ -56,28 +53,35 @@
     font-size: 16px;
     line-height: 1.5;
     color: #FFFFFF;
-    background: #4D5AE5;
-    cursor: pointer;
+    background: var(--primary-brand);
 }
+
+.button-main:hover,
+.button-main:focus {
+    background-color: var(--pressed-state);
+}
+
 
 ul {
     list-style: none;
 }
 
 .logo {
-    color: var(--accent-color);
+    color: var(--primary-brand);
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
     line-height: 1.3;
+    text-decoration: none;
 }
 
 .logo-next {
-    color: var(--primery-text-color);
+    color: var(--modal-overlay);
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
     line-height: 1.3;
+    text-decoration: none;
 }
 
 .logo-bottom {
@@ -86,6 +90,7 @@ ul {
     font-size: 18px;
     line-height: 1.7;
     color: #F4F4FD;
+    text-decoration: none;
 }
 
 .site-nav {
@@ -94,30 +99,36 @@ ul {
     line-height: 1.5;
 }
 
-.auth-nav {
+.auth-nav-link {
     font-size: 16px;
     line-height: 1.5;
-    color: var(--title-text-color);
+    color: var(--text);
+    text-decoration: none;
+}
+
+.auth-nav-link:hover,
+.auth-nav-link:focus {
+    color: var(--pressed-state);
 }
 
 .section {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    color: var(--primery-text-color);
+    color: var(--modal-overlay);
 }
 
 .section-item {
     font-size: 16px;
     line-height: 1.2;
-    color: var(--title-text-color);
+    color: var(--text);
 }
 
 .title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    color: var(--primery-text-color);
+    color: var(--modal-overlay);
 }
 
 .subtitle {
@@ -127,7 +138,7 @@ ul {
 }
 
 .button-all {
-    background: #404BBF;
+    background: var(--pressed-state);
     color: #FFFFFF;
     font-weight: 500;
     font-size: 16px;
@@ -138,5 +149,16 @@ ul {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    color: #4D5AE5;
+    color: var(--primary-brand);
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--pressed-state);
+    text-decoration: none;
+}
+
+.header-link {
+    color: var(--dark);
+    text-decoration: none;
 }
