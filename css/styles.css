@@ -11,6 +11,19 @@
     --hero-background: #2E2F42;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--text);
@@ -21,11 +34,53 @@ body {
     background: #FFFFFF;
 }
 
-.content {
-    background: var(--light);
-    cursor: pointer;
+.header-link:hover,
+.header-link:focus {
+    color: var(--pressed-state);
+    text-decoration: none;
 }
 
+.header-link {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.logo {
+    color: var(--primary-brand);
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.3;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+}
+
+.logo-next {
+    color: var(--modal-overlay);
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.3;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+}
+
+.auth-nav-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.auth-nav-link:hover,
+.auth-nav-link:focus {
+    color: var(--pressed-state);
+}
 
 .box-order,
 .footer {
@@ -37,15 +92,8 @@ body {
     font-size: 56px;
     line-height: 1.07;
     color: #FFFFFF;
-}
-
-
-.button {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #FFFFFF;
-
+    text-align: center;
+    letter-spacing: 0.02em;
 }
 
 .button-main {
@@ -61,27 +109,8 @@ body {
     background-color: var(--pressed-state);
 }
 
-
 ul {
     list-style: none;
-}
-
-.logo {
-    color: var(--primary-brand);
-    font-family: 'Raleway';
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.3;
-    text-decoration: none;
-}
-
-.logo-next {
-    color: var(--modal-overlay);
-    font-family: 'Raleway';
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.3;
-    text-decoration: none;
 }
 
 .logo-bottom {
@@ -99,66 +128,41 @@ ul {
     line-height: 1.5;
 }
 
-.auth-nav-link {
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--text);
-    text-decoration: none;
-}
-
-.auth-nav-link:hover,
-.auth-nav-link:focus {
-    color: var(--pressed-state);
-}
-
-.section {
+.future-item {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     color: var(--modal-overlay);
+    letter-spacing: 0.02em;
 }
 
-.section-item {
+.future-text {
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.5;
     color: var(--text);
+    letter-spacing: 0.02em;
 }
 
-.title {
+.title-item {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     color: var(--modal-overlay);
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.button-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    letter-spacing: 0.04em;
 }
 
 .subtitle {
     font-size: 16px;
     line-height: 1.5;
     color: #E7E9FC;
-}
-
-.button-all {
-    background: var(--pressed-state);
-    color: #FFFFFF;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.category {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--primary-brand);
-}
-
-.header-link:hover,
-.header-link:focus {
-    color: var(--pressed-state);
-    text-decoration: none;
-}
-
-.header-link {
-    color: var(--dark);
-    text-decoration: none;
+    letter-spacing: 0.02em;
 }
